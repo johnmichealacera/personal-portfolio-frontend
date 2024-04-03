@@ -1,15 +1,20 @@
 <template>
+  <nav-bar-component />
   <router-view />
+  <footer-component />
 </template>
 
 <script>
 import router from './router';
+import NavBarComponent from './components/NavBar.vue';
+import FooterComponent from './components/Footer.vue';
 
 export default {
   name: 'App',
   router,
   components: {
-    // HelloWorld
+    NavBarComponent,
+    FooterComponent,
   }
 }
 </script>
